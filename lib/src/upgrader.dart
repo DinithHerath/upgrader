@@ -725,9 +725,10 @@ class Upgrader {
       _sendUserToAppStore();
     }
 
-    if (shouldPop) {
-      popNavigator(context);
-    }
+    // Removed the pop up of upgrade dialog after tapping button
+    // if (shouldPop) {
+    //   popNavigator(context);
+    // }
   }
 
   static Future<void> clearSavedSettings() async {
